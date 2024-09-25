@@ -1,0 +1,9 @@
+class Solution(object):
+   def twoSum(self, nums, target):
+        d={}
+        for i,num in enumerate(nums):
+            com=target-num
+            if com in d:
+                return [d[com], i]
+            d[num] = i
+
